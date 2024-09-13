@@ -1,50 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Happiem</title>
 
+    <!-- font awesome cdn lin =========================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- tailwind cdn link ==================== -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- google font cdn ===================== -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .italic-text {
-  font-family: 'OPTIGaramondOld-Italic', serif;
-}
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .italic-text {
+        font-family: "OPTIGaramondOld-Italic", serif;
+      }
     </style>
-</head>
-<body>
-    <main class="" >
-            <!-- How it works section start ========================== -->
-             <section class="container  my-8"  >
-                 <!-- heading section start ================================= -->
-                    <div class="   flex items-end justify-between pl-10 pr-2 " >
+  </head>
+  <body>
+    <main class="">
+      <!-- How it works section start ========================== -->
+      <section class="container my-8">
+        <!-- heading section start ================================= -->
+        <div
+          class="flex gap-y-4 md:items-end flex-col md:flex-row md:justify-between px-5 lg:px-14"
+        >
+          <div class="space-y-4 md:space-y-5">
+            <button
+              class="text-[#7D74E6] text-sm font-medium bg-[#E3E1F9] rounded-full px-4 py-2"
+            >
+              How it works?
+            </button>
+            <h2
+              class="text-[#131313] font-medium text-3xl md:text-5xl lg:text-6xl"
+            >
+              Real <span class="italic-text italic">Human</span> <br />
+              Connection 🫁
+            </h2>
+          </div>
 
-                        <div class="space-y-5" >
-                            <button class="text-[#7D74E6] bg-[#E3E1F9] rounded-full px-4 py-2 " >
-                                How it works?
-                            </button>
-                            <h2 class="text-[#131313] font-medium text-6xl " >
-                                Real <span class="italic-text italic" >Human</span> <br> Connection 🫁
-                            </h2>
-                        </div>
+          <div class="   ">
+            <p
+              class="text-[#444E5C] font-medium text-sm md:text-base lg:text-xl"
+            >
+              Lorem ipsum dolor sit amet, consectetur <br />
+              adipiscing elit, sed do eiusmod tempor <br />
+              incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <!-- heading section end =============================== -->
 
-                      <div class="max-w-md  " >
-                        <p class="text-[#444E5C] font-medium text-xl  " >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.
+        <!-- assistant section start ====================== -->
+        <section class="px-2 md:px-4 lg:px-6 mt-12">
+          <div class="bg-[#F6F6F6] flex flex-col-reverse lg:flex-row gap-12 lg:gap-16 xl:gap-24 px-4 lg:px-12 py-9 rounded-2xl">
+            <!-- Faq part start ============================ -->
+            <div class="flex-1 md:mt-6 xl:mt-14 ">
+              <section class="">
+                <div class="container ">
+                    <!-- Faq number 1 ============================ -->
+                    <div class=" border-b border-[#DADADA] py-5 xl:py-7 ">
+                        <button class="flex items-center justify-between w-full">
+                          <h1 class="font-medium text-base md:text-lg xl:text-xl text-[#071A34]">
+                            Choose Your personal Assistant
+                          </h1>
+  
+                          <span class="text-gray-400 bg-gray-200 px-4 py-2 rounded-full">
+                            <i class="fa-solid fa-arrow-up-long "></i>
+                             </span>
+                        </button>
+  
+                        <p class="mt-4 font-normal text-sm text-[#444E5C] ">
+                          Select from our team of dedicated, real-life assistants
+                          who are ready to guide you. No remote assistants or AI
+                          chatbots—just genuine human connection.
                         </p>
-                        
                       </div>
+                    <!-- Faq number 1 end============================ -->
+                     <!-- Faq number 2 ============================ -->
+                    <div class="border-b border-[#DADADA]  py-5 xl:py-7 ">
+                        <button class="flex items-center justify-between w-full">
+                          <h1 class="font-medium text-base md:text-lg xl:text-xl text-[#071A34]">
+                            Comprehensive assessment
+                          </h1>
+  
+                          <span class="text-gray-400 bg-gray-200 px-4 py-2 rounded-full">
+                         <i class="fa-solid fa-arrow-up-long "></i>
+                          </span>
+                        </button>
+  
+                        <!-- <p class="mt-4 font-normal text-sm text-[#444E5C] ">
+                          Select from our team of dedicated, real-life assistants
+                          who are ready to guide you. No remote assistants or AI
+                          chatbots—just genuine human connection.
+                        </p> -->
+                      </div>
+                    <!-- Faq number 2 end============================ -->
+                     <!-- Faq number 3 ============================ -->
+                    <div class="border-b border-[#DADADA] py-5 xl:py-7 ">
+                        <button class="flex items-center justify-between w-full">
+                          <h1 class="font-medium text-base md:text-lg xl:text-xl text-[#071A34]">
+                            Begin Your Journey to a Happier Life
+                          </h1>
+                          
+                          <span class="text-gray-400 bg-gray-200 px-4  py-2 rounded-full">
+                            <i class="fa-solid fa-arrow-down-long   "></i>
+                             </span>
+                         
+                        </button>
+  
+                        <!-- <p class="mt-4 font-normal text-sm text-[#444E5C] ">
+                          Select from our team of dedicated, real-life assistants
+                          who are ready to guide you. No remote assistants or AI
+                          chatbots—just genuine human connection.
+                        </p> -->
+                      </div>
+                    <!-- Faq number 3 end============================ -->
+                   
+                </div>
+              </section>
+            </div>
+            <!-- Faq part end ======================== -->
+            <!-- Gallery part start =========================== -->
+            <div class=" flex-1 flex  gap-5" >
+                    <div class="space-y-5" >
+                        <img src="./assets/assistant/pic1.png" alt="">
+                        <img src="./assets/assistant/p2.png" alt="">
                     </div>
-                    <!-- heading section end =============================== -->
-             </section>
-            <!-- How it works section end ========================== -->
+                    <div class="space-y-5" >
+                        <img src="./assets/assistant/p3.png" alt="">
+                        <img src="./assets/assistant/p4.png" alt="">
+                    </div>
+                    
+            </div>
+            <!-- Gallery part end ============================ -->
+          </div>
+        </section>
+        <!-- assistant section end =========================== -->
+      </section>
+      <!-- How it works section end ========================== -->
     </main>
-</body>
+  </body>
 </html>

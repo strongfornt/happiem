@@ -3,6 +3,8 @@ const faqItem = document.querySelectorAll(".faq-item");
 // review card item
 const reviewCard = document.querySelectorAll(".card");
 const card1 = document.querySelector(".card-1");
+const card2 = document.querySelector(".card-2");
+const card3 = document.querySelector(".card-3");
 
 // access all faq items in how it works section =
 faqItem.forEach((item) => {
@@ -30,23 +32,44 @@ reviewCard.forEach((card, index) => {
   if (index === 0) return;
 
   const readMore = document.querySelector(".read-more");
-  const readMore1 = document.querySelector(".read-more1");
+  const readMore1 = document.querySelector(".read-more-1");
+  const readMore2 = document.querySelector(".read-more-2");
+  const readMore3 = document.querySelector(".read-more-3");
   const restDescription = document.querySelector(".rest-description");
-  const restDescription1 = document.querySelector(".rest-description1");
+  const restDescription1 = document.querySelector(".rest-description-1");
+  const restDescription2 = document.querySelector(".rest-description-2");
+  const restDescription3 = document.querySelector(".rest-description-3");
 
   card.addEventListener("mouseover", (e) => {
-    readMore.classList.add("hidden");
-    if (readMore.classList.contains("flex")) {
-      readMore.classList.remove("flex");
-    }
-    restDescription.classList.remove("hidden");
-    if (restDescription.classList.contains("flex")) {
-      restDescription.classList.add("flex");
-    }
+    
+    if(index === 1) {
+      // card 2 ========================
+      readMore2.classList.add("hidden");
+      restDescription2.classList.remove("hidden");
+      card2.classList.add("bg-[#D08875]", "text-white");
+      card2.classList.remove("bg-white", "text-[#131313]");
 
-    card.classList.add("bg-[#D08875]", "text-white");
-    card.classList.remove("bg-white", "text-[#131313]");
+      //card 3 
+      readMore3.classList.remove("hidden");
+      restDescription3.classList.add("hidden");
+      card3.classList.remove("bg-[#D08875]", "text-white");
+      card3.classList.add("bg-white", "text-[#131313]");
 
+    }else if(index === 2){
+      // card 3 ===============
+      readMore3.classList.add("hidden");
+      restDescription3.classList.remove("hidden");
+      card3.classList.add("bg-[#D08875]", "text-white");
+      card3.classList.remove("bg-white", "text-[#131313]");
+
+      //card 2 ==
+      readMore2.classList.remove("hidden");
+      restDescription2.classList.add("hidden");
+      card2.classList.remove("bg-[#D08875]", "text-white");
+      card2.classList.add("bg-white", "text-[#131313]");
+    }
+  
+    //card 1 ====================================
     card1.classList.add("bg-white", "text-black");
     card1.classList.remove("bg-[#D08875]", "text-white");
     restDescription1.classList.add("hidden");
@@ -54,16 +77,25 @@ reviewCard.forEach((card, index) => {
   });
 
   card.addEventListener("mouseout", () => {
-    readMore.classList.remove("hidden");
+    //card 2 start ==================================
+    readMore2.classList.remove("hidden");
+    restDescription2.classList.add("hidden");
+    card2.classList.remove("bg-[#D08875]", "text-white");
+    card2.classList.add("bg-white", "text-[#131313]");
+    //card 2 end =====================================
 
-    restDescription.classList.add("hidden");
+    //card 3 start =================================
+    readMore3.classList.remove("hidden");
+    restDescription3.classList.add("hidden");
+    card3.classList.remove("bg-[#D08875]", "text-white");
+    card3.classList.add("bg-white", "text-[#131313]");
+    //card 3 end =========================================
 
-    card.classList.remove("bg-[#D08875]", "text-white");
-    card.classList.add("bg-white", "text-[#131313]");
-
+    //card 1 start ========================================
     card1.classList.remove("bg-white", "text-black");
     card1.classList.add("bg-[#D08875]", "text-white");
     restDescription1.classList.remove("hidden");
     readMore1.classList.add("hidden");
+    //card 1 end =====================================
   });
 });

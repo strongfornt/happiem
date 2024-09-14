@@ -5,6 +5,12 @@ const reviewCard = document.querySelectorAll(".card");
 const card1 = document.querySelector(".card-1");
 const card2 = document.querySelector(".card-2");
 const card3 = document.querySelector(".card-3");
+//assistant section card ==================
+const assistantCard = document.querySelectorAll(".assistant-card");
+const assistantCard1 = document.querySelector(".assistant-card-1");
+const assistantCard2 = document.querySelector(".assistant-card-2");
+const assistantCard3 = document.querySelector(".assistant-card-3");
+
 
 // access all faq items in how it works section =
 faqItem.forEach((item) => {
@@ -27,7 +33,6 @@ faqItem.forEach((item) => {
 });
 
 // Access all card from review section =============
-// there is a mouseover problem . and also mouseout
 reviewCard.forEach((card, index) => {
   if (index === 0) return;
 
@@ -41,21 +46,19 @@ reviewCard.forEach((card, index) => {
   const restDescription3 = document.querySelector(".rest-description-3");
 
   card.addEventListener("mouseover", (e) => {
-    
-    if(index === 1) {
+    if (index === 1) {
       // card 2 ========================
       readMore2.classList.add("hidden");
       restDescription2.classList.remove("hidden");
       card2.classList.add("bg-[#D08875]", "text-white");
       card2.classList.remove("bg-white", "text-[#131313]");
 
-      //card 3 
+      //card 3
       readMore3.classList.remove("hidden");
       restDescription3.classList.add("hidden");
       card3.classList.remove("bg-[#D08875]", "text-white");
       card3.classList.add("bg-white", "text-[#131313]");
-
-    }else if(index === 2){
+    } else if (index === 2) {
       // card 3 ===============
       readMore3.classList.add("hidden");
       restDescription3.classList.remove("hidden");
@@ -68,7 +71,7 @@ reviewCard.forEach((card, index) => {
       card2.classList.remove("bg-[#D08875]", "text-white");
       card2.classList.add("bg-white", "text-[#131313]");
     }
-  
+
     //card 1 ====================================
     card1.classList.add("bg-white", "text-black");
     card1.classList.remove("bg-[#D08875]", "text-white");
@@ -98,4 +101,97 @@ reviewCard.forEach((card, index) => {
     readMore1.classList.add("hidden");
     //card 1 end =====================================
   });
+});
+
+//Access all assistant card =====================
+assistantCard.forEach((card, idx) => {
+  if (idx === 2) return;
+
+  const card1Designation = document.querySelector(".card1-designation");
+const card1Paragraphs = card1Designation.querySelectorAll("p");
+const card2Designation = document.querySelector(".card2-designation");
+const card2Paragraphs = card2Designation.querySelectorAll("p");
+const card3Designation = document.querySelector(".card3-designation");
+const card3Paragraphs = card3Designation.querySelectorAll("p");
+
+// if mouse in ====================
+  card.addEventListener("mouseover", () => {
+    if (idx === 0) {
+        assistantCard1.classList.add('hover:col-span-2')
+        card1Designation.classList.add('group-hover:px-6','group-hover:py-3','group-hover:border')
+        card1Paragraphs.forEach((p,pid) => {
+            if(pid === 0){
+              p.classList.add('group-hover:hidden')
+            }else if(pid === 1 || pid === 2) {
+              p.classList.add('group-hover:block')
+            }
+        })
+
+    }else if (idx === 1) {
+      assistantCard2.classList.add('hover:col-span-2')
+      card2Designation.classList.add('group-hover:px-6','group-hover:py-3','group-hover:border')
+      card2Paragraphs.forEach((p,pid) => {
+          if(pid === 0){
+            p.classList.add('group-hover:hidden')
+          }else if(pid === 1 || pid === 2) {
+            p.classList.add('group-hover:block')
+          }
+      })
+
+  }
+
+
+  //remove all list of class from card 3 =============
+  assistantCard3.classList.remove('col-span-2')
+  card3Designation.classList.remove('px-6','py-3','border')
+  card3Paragraphs.forEach((p,pid) => {
+      if(pid === 0){
+        p.classList.remove('hidden')
+      }else if(pid === 1 || pid === 2) {
+        p.classList.add('hidden')
+      }
+    })
+    
+  });
+
+// if mouse out ===========================
+card.addEventListener("mouseout", () => {
+  if (idx === 0) {
+      assistantCard1.classList.remove('hover:col-span-2')
+      card1Designation.classList.remove('group-hover:px-6','group-hover:py-3','group-hover:border')
+      card1Paragraphs.forEach((p,pid) => {
+          if(pid === 0){
+            p.classList.remove('group-hover:hidden')
+          }else if(pid === 1 || pid === 2) {
+            p.classList.remove('group-hover:block')
+          }
+      })
+
+  }else if (idx === 1) {
+    assistantCard2.classList.remove('hover:col-span-2')
+    card2Designation.classList.remove('group-hover:px-6','group-hover:py-3','group-hover:border')
+    card2Paragraphs.forEach((p,pid) => {
+        if(pid === 0){
+          p.classList.remove('group-hover:hidden')
+        }else if(pid === 1 || pid === 2) {
+          p.classList.remove('group-hover:block')
+        }
+    })
+
+}
+
+
+//remove all list of class from card 3 =============
+assistantCard3.classList.add('col-span-2')
+card3Designation.classList.add('px-6','py-3','border')
+card3Paragraphs.forEach((p,pid) => {
+    if(pid === 0){
+      p.classList.add('hidden')
+    }else if(pid === 1 || pid === 2) {
+      p.classList.remove('hidden')
+    }
+  })
+  
+});
+
 });

@@ -13,6 +13,9 @@
     <!-- tailwind cdn link ==================== -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- css styleshit link =========================== -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
     <!-- google font cdn ===================== -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
@@ -287,15 +290,129 @@
         <div
           class="px-4 grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6 lg:px-8 mt-8 lg:mt-14"
         >
-          <div>
-            <img src="./assets/Meet-our-assistants/p1.png" alt="" />
+          <!-- Assistant image 1 ====================== -->
+          <div
+            style="
+              background-image: url('./assets/Meet-our-assistants/pw1.png');
+            "
+            class="assistant-card-1 assistant-card transition-all h-60 lg:h-96 group duration-700 ease-in-out bg-no-repeat bg-center bg-cover rounded-3xl lg:rounded-[44px] overflow-hidden"
+          >
+            <div class="px-4 h-full flex flex-col justify-between">
+              <div class="flex items-center justify-between mt-4">
+                <button
+                  class="text-[#131313] bg-[#FFF] px-4 lg:px-6 py-1.5 lg:py-2 rounded-3xl font-semibold text-xs lg:text-lg"
+                >
+                  Trainer
+                </button>
+                <button class="bg-[#FFF] p-2 lg:p-3 rounded-full">
+                  <img
+                    class="w-5 md:w-fit"
+                    src="./assets/Meet-our-assistants/Frame.png"
+                    alt=""
+                  />
+                </button>
+              </div>
+
+              <div
+                class="mb-9 card1-designation flex justify-between border-white rounded-[52px] md:rounded-[99px]"
+              >
+                <p class="text-[#FFFFFF] font-bold text-sm lg:text-xl">
+                  Lawrence
+                </p>
+                <p class="text-[#FFFFFF] font-bold hidden text-sm lg:text-xl">
+                  Lawrence
+                </p>
+                <p class="text-[#FFFFFF] font-bold hidden text-sm lg:text-xl">
+                  New York
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <img src="./assets/Meet-our-assistants/p2.png" alt="" />
+          <!-- Assistant image 1 end ====================== -->
+          <!-- Assistant image 2 ====================== -->
+          <div
+            style="
+              background-image: url('./assets/Meet-our-assistants/pw2.png');
+            "
+            class="assistant-card-2 assistant-card transition-all h-60 lg:h-96 group duration-700 ease-in-out hover:col-span-2 bg-no-repeat bg-center bg-cover  rounded-3xl lg:rounded-[44px] overflow-hidden"
+          >
+            <div class="px-4 h-full flex flex-col justify-between">
+              <div class="flex items-center justify-between mt-4">
+                <button
+                  class="text-[#131313] bg-[#FFF] px-4 lg:px-6 py-1.5 lg:py-2 rounded-3xl font-semibold text-xs lg:text-lg"
+                >
+                  Trainer
+                </button>
+                <button class="bg-[#FFF] p-2 lg:p-3 rounded-full">
+                  <img
+                    class="w-5 md:w-fit"
+                    src="./assets/Meet-our-assistants/Frame.png"
+                    alt=""
+                  />
+                </button>
+              </div>
+
+              <div
+                class="mb-9 card2-designation flex justify-between border-white rounded-[52px] md:rounded-[99px]"
+              >
+                <p
+                  class="text-[#FFFFFF] font-bold text-sm lg:text-xl group-hover:hidden"
+                >
+                  John Doe
+                </p>
+                <p
+                  class="text-[#FFFFFF] font-bold hidden group-hover:block text-sm lg:text-xl"
+                >
+                  John Doe
+                </p>
+                <p
+                  class="text-[#FFFFFF] font-bold hidden group-hover:block text-sm lg:text-xl"
+                >
+                  New York
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="col-span-2">
-            <img src="./assets/Meet-our-assistants/p3.png" alt="" />
+          <!-- Assistant image 2 end ====================== -->
+          <!-- Assistant image 3 ====================== -->
+          <div
+            style="
+              background-image: url('./assets/Meet-our-assistants/pw3.png');
+            "
+            class="assistant-card-3 assistant-card transition-all h-60 lg:h-96 group duration-700 ease-in-out col-span-2 bg-no-repeat bg-center bg-cover  rounded-3xl lg:rounded-[44px] overflow-hidden"
+          >
+            <div class="px-4 h-full flex flex-col justify-between">
+              <div class="flex items-center justify-between mt-4">
+                <button
+                  class="text-[#131313] bg-[#FFF] px-4 lg:px-6 py-1.5 lg:py-2 rounded-3xl font-semibold  text-xs lg:text-lg"
+                >
+                  Trainer
+                </button>
+                <button class="bg-[#FFF] p-2 lg:p-3 rounded-full">
+                  <img
+                    class="w-5 md:w-fit"
+                    src="./assets/Meet-our-assistants/Frame.png"
+                    alt=""
+                  />
+                </button>
+              </div>
+
+              <div
+                class="mb-9 card3-designation flex justify-between px-6 py-3 border border-white rounded-[52px] md:rounded-[99px]"
+              >
+                <p class="text-[#FFFFFF] font-bold text-sm lg:text-xl hidden">
+                  Christopher Jackson
+                </p>
+                <p class="text-[#FFFFFF] font-bold text-sm lg:text-xl">
+                  Christopher Jackson
+                </p>
+                <p class="text-[#FFFFFF] font-bold text-sm lg:text-xl">
+                  New York
+                </p>
+              </div>
+            </div>
           </div>
+          <!-- Assistant image 3 end ====================== -->
         </div>
         <!-- section gallery end   ====================  -->
 
@@ -326,9 +443,9 @@
       <section
         class="container my-14 md:my-20 bg-[#5F6B80] px-2 md:px-4 lg:px-6"
       >
-        <div class="px-4 lg:px-12 py-9">
+        <div class="px-4 lg:px-12 flex justify-between">
           <!-- content side start ========================== -->
-          <div>
+          <div class="py-28">
             <div class="space-y-4 md:space-y-7">
               <button
                 class="text-[#FFFFFF] text-sm font-medium bg-[#FFFFFF4A] rounded-full px-4 py-2"
@@ -356,7 +473,26 @@
           </div>
           <!-- content side end ========================== -->
           <!-- Gallery side start ============================ -->
-          <div></div>
+          <!-- <div class=" marquee-container ">
+            <div class="column scroll-up">
+              <img src="./assets/happiems-for-you/p7.png" alt="Image 1">
+              <img src="./assets/happiems-for-you/p4.png" alt="Image 2">
+              <img src="./assets/happiems-for-you/p6.png" alt="Image 3">
+              <img src="./assets/happiems-for-you/p1.png" alt="Image 4">
+              <img src="./assets/happiems-for-you/p2.png" alt="Image 2">
+              <img src="./assets/happiems-for-you/p3.png" alt="Image 2">
+              
+            </div>
+            <div class="column scroll-down">
+              <img src="./assets/happiems-for-you/p3.png" alt="Image 1">
+              <img src="./assets/happiems-for-you/p2.png" alt="Image 2">
+              <img src="./assets/happiems-for-you/p1.png" alt="Image 2">
+              <img src="./assets/happiems-for-you/p6.png" alt="Image 2">
+              <img src="./assets/happiems-for-you/p4.png" alt="Image 2">
+              <img src="./assets/happiems-for-you/p7.png" alt="Image 2">
+            </div>
+          </div> -->
+
           <!-- Gallery side end ============================ -->
         </div>
       </section>
@@ -466,30 +602,30 @@
       >
         <!-- banner side start =========================== -->
         <div class="flex-1">
-          <div class="relative" >
+          <div class="relative">
             <button
-            class="text-[#7D74E6] mb-4 lg:mb-8 text-sm font-medium bg-[#E3E1F9] rounded-full px-4 py-2"
-          >
-            Testimonials
-          </button>
-              <!-- section heading ============================ -->
-              <div class="space-y-4 absolute  md:space-y-5 xl:space-y-8">
-              
-  
-                <h2
-                  class="text-[#131313] font-medium  text-4xl md:text-5xl xl:text-6xl"
-                >
-                Hear From 
-                <div  class=" leading-tight tracking-tight" >
-                  Our <span class="italic-text italic text-3xl xl:text-5xl font-normal">Satisfied </span> 
+              class="text-[#7D74E6] mb-4 lg:mb-8 text-sm font-medium bg-[#E3E1F9] rounded-full px-4 py-2"
+            >
+              Testimonials
+            </button>
+            <!-- section heading ============================ -->
+            <div class="space-y-4 absolute md:space-y-5 xl:space-y-8">
+              <h2
+                class="text-[#131313] font-medium text-4xl md:text-5xl xl:text-6xl"
+              >
+                Hear From
+                <div class="leading-tight tracking-tight">
+                  Our
+                  <span
+                    class="italic-text italic text-3xl xl:text-5xl font-normal"
+                    >Satisfied
+                  </span>
                 </div>
-                  <div class="   ">Clients ❤</div>
-                </h2>
-              </div>
-              <!-- section heading end ============================ -->
+                <div class="   ">Clients ❤</div>
+              </h2>
+            </div>
+            <!-- section heading end ============================ -->
             <img src="./assets/testmonial/ppp1.png" alt="" />
-
-            
           </div>
 
           <!-- counting start ================================ -->
@@ -531,10 +667,10 @@
         </div>
         <!-- banner side end =========================== -->
         <!-- review side start ============================ -->
-        <div class="flex-1 lg:mt-14  space-y-4">
+        <div class="flex-1 lg:mt-14 space-y-4">
           <!-- review card 1 start =============================== -->
           <div
-            class="card-1  card duration-1000 px-6 py-2.5 md:px-9 md:py-4 bg-[#D08875] text-[#FFFFFF] rounded-3xl border border-[#D6D6D6]"
+            class="card-1 card duration-1000 px-6 py-2.5 md:px-9 md:py-4 bg-[#D08875] text-[#FFFFFF] rounded-3xl border border-[#D6D6D6]"
           >
             <p class="leading-4 md:leading-7 text-xs md:text-sm font-semibold">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -591,11 +727,9 @@
           <!-- review card 1 end   =============================== -->
           <!-- review card 2 start =============================== -->
           <div
-            class="card-2 text-[#131313]  duration-1000 card px-6 py-2.5 md:px-9 md:py-4 bg-white rounded-3xl border border-[#D6D6D6]"
+            class="card-2 text-[#131313] duration-1000 card px-6 py-2.5 md:px-9 md:py-4 bg-white rounded-3xl border border-[#D6D6D6]"
           >
-            <p
-              class="leading-4 md:leading-7  text-xs md:text-sm font-semibold"
-            >
+            <p class="leading-4 md:leading-7 text-xs md:text-sm font-semibold">
               “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
               <span class="font-bold read-more read-more-2 text-xs md:text-lg"
@@ -616,9 +750,7 @@
               />
 
               <div class="md:mx-2">
-                <h1 class="font-semibold  text-xs md:text-lg">
-                  Josh Gross
-                </h1>
+                <h1 class="font-semibold text-xs md:text-lg">Josh Gross</h1>
                 <div class="flex gap-[2px] md:gap-1 mt-1">
                   <img
                     class="w-2 md:w-fit"
@@ -654,20 +786,18 @@
           <div
             class="card-3 duration-1000 text-[#131313] card px-6 py-2.5 md:px-9 md:py-4 bg-white rounded-3xl border border-[#D6D6D6]"
           >
-          <p
-          class="leading-4 md:leading-7  text-xs md:text-sm font-semibold"
-        >
-          “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et
-          <span class="font-bold read-more read-more-3 text-xs md:text-lg"
-            >...Read more”</span
-          >
-          <span class="hidden rest-description rest-description-3"
-            >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et .”</span
-          >
-        </p>
+            <p class="leading-4 md:leading-7 text-xs md:text-sm font-semibold">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+              <span class="font-bold read-more read-more-3 text-xs md:text-lg"
+                >...Read more”</span
+              >
+              <span class="hidden rest-description rest-description-3"
+                >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et .”</span
+              >
+            </p>
 
             <div class="flex items-center mt-1.5 md:mt-3 -mx-2">
               <img
@@ -677,9 +807,7 @@
               />
 
               <div class="md:mx-2">
-                <h1 class="font-semibold  text-xs md:text-lg">
-                  Utsav Manjeer
-                </h1>
+                <h1 class="font-semibold text-xs md:text-lg">Utsav Manjeer</h1>
                 <div class="flex gap-[2px] md:gap-1 mt-1">
                   <img
                     class="w-2 md:w-fit"
@@ -879,9 +1007,7 @@
       <!-- FAq Section11 start ================================ -->
       <section class="px-4 xl:px-12 my-16 md:my-20 xl:my-28">
         <div class="">
-          <div
-            class="flex flex-col lg:flex-row gap-9 lg:gap-16 xl:gap-24"
-          >
+          <div class="flex flex-col lg:flex-row gap-9 lg:gap-16 xl:gap-24">
             <!-- Section content part start =========================== -->
             <div class="flex-1 flex gap-5">
               <div class="space-y-4">
@@ -914,7 +1040,9 @@
                 <div class="container">
                   <!-- Faq number 1 ============================ -->
                   <div class="faq-item border-b border-[#DADADA] py-5 xl:py-7">
-                    <div class="flex items-start md:items-center justify-between w-full">
+                    <div
+                      class="flex items-start md:items-center justify-between w-full"
+                    >
                       <h1
                         class="font-medium max-w-72 md:max-w-md text-base md:text-lg xl:text-xl text-[#071A34]"
                       >
@@ -931,7 +1059,9 @@
                       </button>
                     </div>
 
-                    <p class="answer mt-4 max-w-[466px] font-normal text-sm text-[#444E5C]">
+                    <p
+                      class="answer mt-4 max-w-[466px] font-normal text-sm text-[#444E5C]"
+                    >
                       Select from our team of dedicated, real-life assistants
                       who are ready to guide you. No remote assistants or AI
                       chatbots—just genuine human connection.
@@ -940,11 +1070,14 @@
                   <!-- Faq number 1 end============================ -->
                   <!-- Faq number 2 ============================ -->
                   <div class="faq-item border-b border-[#DADADA] py-5 xl:py-7">
-                    <div class="flex items-start md:items-center justify-between w-full">
+                    <div
+                      class="flex items-start md:items-center justify-between w-full"
+                    >
                       <h1
                         class="font-medium max-w-72 md:max-w-md text-base md:text-lg xl:text-xl text-[#071A34]"
                       >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod
                       </h1>
 
                       <button
@@ -967,11 +1100,13 @@
                   <!-- Faq number 2 end============================ -->
                   <!-- Faq number 3 ============================ -->
                   <div class="faq-item border-b border-[#DADADA] py-5 xl:py-7">
-                    <div class="flex items-start md:items-center justify-between w-full">
+                    <div
+                      class="flex items-start md:items-center justify-between w-full"
+                    >
                       <h1
                         class="font-medium max-w-72 md:max-w-md text-base md:text-lg xl:text-xl text-[#071A34]"
                       >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
                       </h1>
 
                       <button
@@ -992,13 +1127,15 @@
                     </p>
                   </div>
                   <!-- Faq number 3 end============================ -->
-                        <!-- Faq number 4 ============================ -->
+                  <!-- Faq number 4 ============================ -->
                   <div class="faq-item border-b border-[#DADADA] py-5 xl:py-7">
-                    <div class="flex items-start md:items-center justify-between w-full">
+                    <div
+                      class="flex items-start md:items-center justify-between w-full"
+                    >
                       <h1
                         class="font-medium max-w-72 md:max-w-md text-base md:text-lg xl:text-xl text-[#071A34]"
                       >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
                       </h1>
 
                       <button
@@ -1011,7 +1148,7 @@
                     </div>
 
                     <p
-                      class="answer hidden mt-4  font-normal text-sm text-[#444E5C]"
+                      class="answer hidden mt-4 font-normal text-sm text-[#444E5C]"
                     >
                       Select from our team of dedicated, real-life assistants
                       who are ready to guide you. No remote assistants or AI
@@ -1019,13 +1156,15 @@
                     </p>
                   </div>
                   <!-- Faq number 4 end============================ -->
-                        <!-- Faq number 5 ============================ -->
+                  <!-- Faq number 5 ============================ -->
                   <div class="faq-item border-b border-[#DADADA] py-5 xl:py-7">
-                    <div class="flex  items-start md:items-center justify-between w-full">
+                    <div
+                      class="flex items-start md:items-center justify-between w-full"
+                    >
                       <h1
                         class="font-medium max-w-72 md:max-w-md text-base md:text-lg xl:text-xl text-[#071A34]"
                       >
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit
                       </h1>
 
                       <button
@@ -1057,100 +1196,130 @@
     </main>
 
     <!-- footer  start ============================ -->
-     <footer class="bg-[#E3E3E3] px-4 xl:px-12 py-10 flex flex-col gap-8 lg:flex-row lg:gap-4 xl:gap-7 " >
-          <!-- footer left side start ================== -->
-            <div class="bg-[#5F6B80] rounded-[24px] md:rounded-[44px] overflow-hidden flex justify-between  " >
-                <!-- part 1 start ================ -->
-                 <div class=" ml-3 md:ml-8 pt-8 min-w-fit space-y-3 md:space-y-10" >  
-                    <!-- logo ========== -->
-                     <div class="max-w-28 md:max-w-fit" >
-                      <img  src="./assets/Logo/logo.png" alt="">
-                     </div>
+    <footer
+      class="bg-[#E3E3E3] px-4 xl:px-12 py-10 flex flex-col gap-8 lg:flex-row lg:gap-4 xl:gap-7"
+    >
+      <!-- footer left side start ================== -->
+      <div
+        class="bg-[#5F6B80] rounded-[24px] md:rounded-[44px] overflow-hidden flex justify-between"
+      >
+        <!-- part 1 start ================ -->
+        <div class="ml-3 md:ml-8 pt-8 min-w-fit space-y-3 md:space-y-10">
+          <!-- logo ========== -->
+          <div class="max-w-28 md:max-w-fit">
+            <img src="./assets/Logo/logo.png" alt="" />
+          </div>
 
-                    <div class="space-y-7 md:space-y-10" >
-                        <!-- title ==================== -->
-                        <h3 class="text-[#FFFFFF] font-medium hidden md:block text-5xl tracnking-[-2px] " >
-                          Live your life <p class="leading-tight" >to the fullest!</p>
-                        </h3>
-                        <h3 class="text-[#FFFFFF] font-medium md:hidden  text-xl tracnking-[-2px] " >
-                          Live your life to <p class="leading-tight" > the fullest!</p>
-                        </h3>
-  
-                       <!-- app and google store img============ -->
-                        <div class="flex gap-3 max-w-16 md:max-w-fit " >
-                          <img src="./assets/footer/p3.png" alt="">
-                          <img src="./assets/footer/p2.png" alt="">
-                        </div>
-                    </div>
-                 </div>
-                <!-- part 1 end ================ -->
-                 <!-- part 2 start =============== -->
-                  <div class="flex items-end " >
-                        <div class=" mt-24 md:mt-0" >
-                          <img class="" src="./assets/footer/p1.png" alt="">
-                        </div>
-                  </div>
-                 <!-- part 2 end =============== -->
+          <div class="space-y-7 md:space-y-10">
+            <!-- title ==================== -->
+            <h3
+              class="text-[#FFFFFF] font-medium hidden md:block text-5xl tracnking-[-2px]"
+            >
+              Live your life
+              <p class="leading-tight">to the fullest!</p>
+            </h3>
+            <h3
+              class="text-[#FFFFFF] font-medium md:hidden text-xl tracnking-[-2px]"
+            >
+              Live your life to
+              <p class="leading-tight">the fullest!</p>
+            </h3>
 
+            <!-- app and google store img============ -->
+            <div class="flex gap-3 max-w-16 md:max-w-fit">
+              <img src="./assets/footer/p3.png" alt="" />
+              <img src="./assets/footer/p2.png" alt="" />
             </div>
-           <!-- footer left side end  ========================== -->
-            <!-- footer right side start ================== -->
-             <div class="  md:px-8">
-                  <!-- part 1 start ======================= -->
-                    <div class="border-b  pb-6 border-[#CECECE]" >
-                        <label for="" class="text-[#94A3B8] font-medium uppercase text-sm md:text-lg " >Quick links</label>
-                        <ul class="text-[#131313] justify-between grid grid-cols-2 md:grid-cols-1 gap-2 md:gap-4 mt-2 text-sm md:text-lg font-medium " >
-                          <li >Learn</li> 
-                          <li class="" >Support</li>
-                          <li >About us</li>
-                          <li >Security</li>
-                          <li >Plans</li>
-                          <li >Legal & disclosures</li>
-                         
-                        </ul>
-                    </div>
-                  <!-- part 1 end ======================= -->
-                   <!-- part 2 start ========================= -->
-                    <div class="border-b hidden md:block border-[#CECECE] py-8 " >
-                        <label class="text-[#94A3B8] font-medium uppercase text-sm md:text-lg " for="">Contact us</label>
-                        <p class="text-[#131313] text-sm md:text-lg font-medium  " >
-                          support@loremipsum.com
-                        </p>
-                    </div>
+          </div>
+        </div>
+        <!-- part 1 end ================ -->
+        <!-- part 2 start =============== -->
+        <div class="flex items-end">
+          <div class="mt-24 md:mt-0">
+            <img class="" src="./assets/footer/p1.png" alt="" />
+          </div>
+        </div>
+        <!-- part 2 end =============== -->
+      </div>
+      <!-- footer left side end  ========================== -->
+      <!-- footer right side start ================== -->
+      <div class="md:px-8">
+        <!-- part 1 start ======================= -->
+        <div class="border-b pb-6 border-[#CECECE]">
+          <label
+            for=""
+            class="text-[#94A3B8] font-medium uppercase text-sm md:text-lg"
+            >Quick links</label
+          >
+          <ul
+            class="text-[#131313] justify-between grid grid-cols-2 md:grid-cols-1 gap-2 md:gap-4 mt-2 text-sm md:text-lg font-medium"
+          >
+            <li>Learn</li>
+            <li class="">Support</li>
+            <li>About us</li>
+            <li>Security</li>
+            <li>Plans</li>
+            <li>Legal & disclosures</li>
+          </ul>
+        </div>
+        <!-- part 1 end ======================= -->
+        <!-- part 2 start ========================= -->
+        <div class="border-b hidden md:block border-[#CECECE] py-8">
+          <label
+            class="text-[#94A3B8] font-medium uppercase text-sm md:text-lg"
+            for=""
+            >Contact us</label
+          >
+          <p class="text-[#131313] text-sm md:text-lg font-medium">
+            support@loremipsum.com
+          </p>
+        </div>
 
-                   <!-- part 2 end ========================= -->
-                    <!-- part 3 start ========================== -->
-                     <div class="pt-8 hidden md:block" >
-                      <label class="text-[#94A3B8] font-medium uppercase text-sm md:text-lg " for="">Follow us</label>
-                      <div class="flex gap-4 mt-4" >
-                        <img src="./assets/footer/s1.png" alt="">
-                        <img src="./assets/footer/s2.png" alt="">
-                        <img src="./assets/footer/s3.png" alt="">
-                      </div>
-                     </div>
-                    <!-- part 3 end ========================== -->
-                     <!-- part 2 and part 3 combination ================= -->
-                      <div class="py-4 md:hidden flex items-center justify-between " >
-                        <div class="   " >
-                          <label class="text-[#94A3B8] font-medium uppercase text-sm md:text-lg " for="">Contact us</label>
-                          <p class="text-[#131313] mt-2 text-sm md:text-lg font-medium  " >
-                            support@loremipsum.com
-                          </p>
-                      </div>
-                      <div class="" >
-                        <label class="text-[#94A3B8] font-medium uppercase text-sm md:text-lg " for="">Follow us</label>
-                        <div class="flex gap-4 mt-2" >
-                          <img src="./assets/footer/s1.png" alt="">
-                          <img src="./assets/footer/s2.png" alt="">
-                          <img src="./assets/footer/s3.png" alt="">
-                        </div>
-                       </div>
-                      </div>
-                     <!-- part 2 and part 3 combination ================= -->
-             </div>
-             <!-- footer right side end ========================= -->
-     </footer>
-     <!-- footer end ========================================= -->
+        <!-- part 2 end ========================= -->
+        <!-- part 3 start ========================== -->
+        <div class="pt-8 hidden md:block">
+          <label
+            class="text-[#94A3B8] font-medium uppercase text-sm md:text-lg"
+            for=""
+            >Follow us</label
+          >
+          <div class="flex gap-4 mt-4">
+            <img src="./assets/footer/s1.png" alt="" />
+            <img src="./assets/footer/s2.png" alt="" />
+            <img src="./assets/footer/s3.png" alt="" />
+          </div>
+        </div>
+        <!-- part 3 end ========================== -->
+        <!-- part 2 and part 3 combination ================= -->
+        <div class="py-4 md:hidden flex items-center justify-between">
+          <div class="   ">
+            <label
+              class="text-[#94A3B8] font-medium uppercase text-sm md:text-lg"
+              for=""
+              >Contact us</label
+            >
+            <p class="text-[#131313] mt-2 text-sm md:text-lg font-medium">
+              support@loremipsum.com
+            </p>
+          </div>
+          <div class="">
+            <label
+              class="text-[#94A3B8] font-medium uppercase text-sm md:text-lg"
+              for=""
+              >Follow us</label
+            >
+            <div class="flex gap-4 mt-2">
+              <img src="./assets/footer/s1.png" alt="" />
+              <img src="./assets/footer/s2.png" alt="" />
+              <img src="./assets/footer/s3.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- part 2 and part 3 combination ================= -->
+      </div>
+      <!-- footer right side end ========================= -->
+    </footer>
+    <!-- footer end ========================================= -->
 
     <script src="./script/index.js"></script>
   </body>

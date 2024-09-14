@@ -1,4 +1,7 @@
 /* Container setup */
+body {
+  overflow-x: clip;
+}
 .marquee-container {
     display: flex;
     justify-content: space-between;
@@ -62,12 +65,12 @@
   .slider {
     /* display: flex;
     align-items: center; */
-    animation: slide 30s linear infinite;
+    animation: slide 15s linear infinite;
   }
   .slider2 {
     /* display: flex;
     align-items: center; */
-    animation: slide2 30s linear infinite;
+    animation: slide2 15s linear infinite;
   }
 
 

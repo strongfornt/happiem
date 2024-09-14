@@ -117,13 +117,13 @@ const card3Paragraphs = card3Designation.querySelectorAll("p");
 // if mouse in ====================
   card.addEventListener("mouseover", () => {
     if (idx === 0) {
-        assistantCard1.classList.add('hover:col-span-2')
-        card1Designation.classList.add('group-hover:px-6','group-hover:py-3','group-hover:border')
+        assistantCard1.classList.add('col-span-2')
+        card1Designation.classList.add('px-6','py-3','border')
         card1Paragraphs.forEach((p,pid) => {
             if(pid === 0){
-              p.classList.add('group-hover:hidden')
+              p.classList.add('hidden')
             }else if(pid === 1 || pid === 2) {
-              p.classList.add('group-hover:block')
+              p.classList.add('block')
             }
         })
 
@@ -157,24 +157,24 @@ const card3Paragraphs = card3Designation.querySelectorAll("p");
 // if mouse out ===========================
 card.addEventListener("mouseout", () => {
   if (idx === 0) {
-      assistantCard1.classList.remove('hover:col-span-2')
-      card1Designation.classList.remove('group-hover:px-6','group-hover:py-3','group-hover:border')
+      assistantCard1.classList.remove('col-span-2')
+      card1Designation.classList.remove('px-6','py-3','border')
       card1Paragraphs.forEach((p,pid) => {
           if(pid === 0){
-            p.classList.remove('group-hover:hidden')
+            p.classList.remove('hidden')
           }else if(pid === 1 || pid === 2) {
-            p.classList.remove('group-hover:block')
+            p.classList.remove('block')
           }
       })
 
   }else if (idx === 1) {
-    assistantCard2.classList.remove('hover:col-span-2')
-    card2Designation.classList.remove('group-hover:px-6','group-hover:py-3','group-hover:border')
+    assistantCard2.classList.remove('col-span-2')
+    card2Designation.classList.remove('px-6','py-3','border')
     card2Paragraphs.forEach((p,pid) => {
         if(pid === 0){
-          p.classList.remove('group-hover:hidden')
+          p.classList.remove('hidden')
         }else if(pid === 1 || pid === 2) {
-          p.classList.remove('group-hover:block')
+          p.classList.remove('block')
         }
     })
 

@@ -12,6 +12,8 @@ const assistantCard2 = document.querySelector(".assistant-card-2");
 const assistantCard3 = document.querySelector(".assistant-card-3");
 
 
+
+
 // access all faq items in how it works section =
 faqItem.forEach((item) => {
   const questionBtn = item.querySelector(".faq-question");
@@ -103,32 +105,34 @@ reviewCard.forEach((card, index) => {
   });
 });
 
-//Access all assistant card =====================
-assistantCard.forEach((card, idx) => {
-  if (idx === 2) return;
-
-  const card1Designation = document.querySelector(".card1-designation");
-const card1Paragraphs = card1Designation.querySelectorAll("p");
-const card2Designation = document.querySelector(".card2-designation");
-const card2Paragraphs = card2Designation.querySelectorAll("p");
-const card3Designation = document.querySelector(".card3-designation");
-const card3Paragraphs = card3Designation.querySelectorAll("p");
-
-// if mouse in ====================
+// //Access all assistant card =====================
+const assistantCardEffect = () => {
+  assistantCard.forEach((card, idx) => {
+    if (idx === 2) return;
+  
+    const card1Designation = document.querySelector(".card1-designation");
+  const card1Paragraphs = card1Designation.querySelectorAll("p");
+  const card2Designation = document.querySelector(".card2-designation");
+  const card2Paragraphs = card2Designation.querySelectorAll("p");
+  const card3Designation = document.querySelector(".card3-designation");
+  const card3Paragraphs = card3Designation.querySelectorAll("p");
+  
+  // if mouse in ====================
   card.addEventListener("mouseover", () => {
     if (idx === 0) {
+      // assistantCard1.style.transition = "all 1s ease"; 
         assistantCard1.classList.add('col-span-2')
-        card1Designation.classList.add('px-6','py-3','border')
+        card1Designation.classList.add('group-hover:px-6','group-hover:py-3','group-hover:border')
         card1Paragraphs.forEach((p,pid) => {
             if(pid === 0){
-              p.classList.add('hidden')
+              p.classList.add('group-hover:hidden')
             }else if(pid === 1 || pid === 2) {
-              p.classList.add('block')
+              p.classList.add('group-hover:block')
             }
         })
 
     }else if (idx === 1) {
-      assistantCard2.classList.add('hover:col-span-2')
+      assistantCard2.classList.add('col-span-2')
       card2Designation.classList.add('group-hover:px-6','group-hover:py-3','group-hover:border')
       card2Paragraphs.forEach((p,pid) => {
           if(pid === 0){
@@ -193,5 +197,19 @@ card3Paragraphs.forEach((p,pid) => {
   })
   
 });
+  });
+}
+const isSmallDevice = window.innerWidth <= 767;
+if(!isSmallDevice){
+  assistantCardEffect()
+}
 
-});
+
+
+
+
+
+
+
+
+
